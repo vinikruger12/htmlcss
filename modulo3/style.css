@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte1: 'Passion One', Arial;
+    --fonte2: 'Caveat', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: rgb(170, 170, 59);
+    text-align: center;
+    color: white;
+   
+}
+
+
+
+header > h1{
+         padding-top: 30px;
+         font-variant: small-caps;
+         font-size: 10vw;
+         font-family: var(--fonte1);
+}
+
+header > p{
+    padding-bottom: 30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 30px;
+    font-size: 4vw;
+    text-align: justify;
+    padding-right: 30px;
+    line-height: 1.5em;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.315);
+    font-family: var(--fonte2);
+}
+
+section > p{
+    padding-bottom: 50px;
+    text-indent: 20px;
+}
+
+
+
+
+section.normal{
+    background-color: rgb(86, 168, 98);
+    color: rgb(50, 74, 192);
+}
+
+section.imagem{
+    background-color: green;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.482);
+
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.455);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 15px;
+    
+}
+
+section#img01{
+    background-image: url(imagens/getulio.jpeg);
+}
+
+section#img02{
+    background-image: url(imagens/bandeira-do-Brasil-1.jpg);
+}
+
+footer{
+    background-color:rgb(170, 170, 59); ;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.267);
+}
