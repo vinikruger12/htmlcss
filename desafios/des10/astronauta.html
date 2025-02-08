@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronauta no espaco.</title>
+    <style>
+
+        *{
+            margin: 0px;
+        }
+        .espaco{
+            height: 100vh;
+            background-image: url(imagens/espaco.jpg);
+            background-size: 100% 100%;
+            position: relative;
+        }
+
+        .astronauta{
+            background-image: url(imagens/atronauta.png);
+            width: 500px;
+            height: 500px;
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="espaco">
+        <div class="astronauta"></div>
+    </div>
+</body>
+</html>
