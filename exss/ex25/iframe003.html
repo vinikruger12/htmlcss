@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            border: 2px solid black;
+            width: 93vh;
+            display: block;
+            margin: auto;
+            height: 300px;
+        }
+
+        iframe > srcdoc {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Make a decision</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatibus? Sint, iste voluptatibus ad nisi tempore saepe quas, eveniet deserunt laboriosam voluptas ab consectetur vel eius et corporis ducimus velit!</p>
+
+    <ul>
+        <li><a href="pag001.html" target="frame">First Page</a></li>
+        <li><a href="pag002.html" target="frame">Second Page</a></li>
+        <li><a href="pag003.html" target="frame">Third Page</a></li>
+
+       
+    </ul>
+
+    <iframe srcdoc=" <h1 >Choose a website </h1> <p> Lorem" frameborder="0" name="frame"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam est repellat atque labore ut omnis ab exercitationem explicabo nulla consequuntur sint quaerat assumenda adipisci, repudiandae sapiente illo! Cumque, iste.</p>
+</body>
+</html>
