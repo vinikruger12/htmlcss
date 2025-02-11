@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background-image: url(../imagens/imagem-de-fundo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+article.celular{
+    background-image: url(../imagens/iphonecerto1.png);
+    width: 200px ;
+    height: 375px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+iframe#tela{
+    position: relative;
+    height: 337px;
+    width: 156px;
+    top: 19px;
+    left: 25px;
+    border-radius: 20px;
+}
+
+article.icones{
+    text-align: right;
+}
+
+article.icones img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.496);
+}
+
+article.icones img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.584);
+    transition: 0.1s;
+}
