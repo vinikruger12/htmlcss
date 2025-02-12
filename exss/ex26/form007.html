@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formualario</title>
+</head>
+<body>
+    <h1>Teste de Formualario sem input</h1>
+    <form action="cadastro.php" method="get">
+        <label for="iest">Estado:  </label>
+        <select name="estado" id="iest">
+            <option value="choose" selected>--escolha--</option>
+            <optgroup label="Regiao Sudeste">
+                <option value="Mg">Minas Gerais</option>
+                <option value="Sp">Sao Paulo</option>
+                <option value="Rj">Rio de Janeiro</option>
+            </optgroup>
+            <optgroup label="Regiao Sul">
+                <option value="Sc">Santa Catarina</option>
+                <option value="Rgs">Rio Grande do Sul</option>
+                <option value="Pr">Parana</option>
+            </optgroup>
+        </select> <br>
+
+        <label for="iprof">Profissao: <input type="text" name="prof" id="iprof" list="profe"> </label>
+        <datalist id="profe">
+            <option value="Dev">Desenvolvedor</option>
+            <option value="Moto">Motoqueiro</option>
+            <option value="Fut">Jogador de Futebol</option>
+        </datalist>
+
+        <p><label for="itext">Esreva aqui:</label><br>
+            <textarea name="mensagem" id="itext" rows="7" cols="7"></textarea>
+        </p>
+
+    </form>
+</body>
+</html>
