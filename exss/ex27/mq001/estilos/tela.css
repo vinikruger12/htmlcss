@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header h1{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+}
+
+header nav{
+    padding-left: 20px;
+
+}
+
+header li{
+    display: inline-block;
+}
+
+main{
+    width: 300px;
+    margin: auto;
+    text-align: justify;
+}
+
+main h2{
+    padding: 20px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+main p{
+    text-indent: 10px;
+}
