@@ -33,13 +33,54 @@
             <label for="idhomem">Homem <input value="Homem" type="radio" name="Sexo" id="idhomem"></label> <br>
             <label for="idmulher">Mulher <input value="Mulher" type="radio" name="Sexo" id="idmulher"></label>
             </p>
+<p>
+    
+                <label for="irange">Escolha <input type="range" value="5" min="0" max="10" id="irange" oninput="idrange.innerHTML = Number(irange.value)"></label>
+                <output id="idrange" nome="range"></output>
+</p>
 
+            <p><label for="num1">Numero 1: <input type="number" name="numero1" id="num1" oninput="isoma.innerHTML = Number(inum1.value) + Number(num2.value) + Number(num3.value)"></label></p>
 
+            <p><label for="num2">Numero 2: <input type="number" name="numero2" id="num2" oninput="isoma.innerHTML = Number(num1.value) + Number(num2.value) + Number(num3.value)"></label></p>
+
+            <p><label for="num3">Numero 3: <input type="number" name="numero3" id="num3" oninput="isoma.innerHTML = Number(num1.value) + Number(num2.value) + Number(num3.value)"></label></p>
+
+            <p>Soma :<output id="isoma" name="Soma:"></output></p>
+
+            <p><label for="iano"><input type="number" name="ano" id="iano" min="1900" max="2100" oninput="calcIdade()"></label></p>
+
+            <label for="iidade">Idade:
+                <output id="iidade" name="idade">0</output>
+            </label>
+
+            <p><label for="idselect">Rua <select name="ruas" id="idselect">
+                <option value="mendes">Rua Arthur Mendes</option>
+                <option value="Rua Beijamin Constant">Rua Beijamin Constant</option>
+            </select></label></p>
+
+            <p><label for="ruas">Sua Rua <input type="text" name="roa" id="ruas" list="suarua"> <datalist id="suarua">
+                <option value="mendes">Rua Arthur Mendes</option>
+                <option value="Rua Beijamin Constant">Rua Beijamin Constant</option>
+            </datalist></label></p>
+
+            <p><label for="texto">Escreva sua mensagem aqui <br><textarea name="textao" id="textpo"></textarea></label></p>
+
+            <p><label for="enviar"><input type="submit" value="Enviar"></label>
+            <label for="limpar"><input type="reset" value="Limpar"></label>
+            </p>
 
 
 
 
         </form>
+        <script>
+            function calcIdade(){
+                let atual = new Date(). getFullYear()
+                    iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
     </fieldset>
+
+   
 </body>
 </html>
