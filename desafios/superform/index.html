@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Formulario</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Formulario</legend>
+        <form method="get">
+            <p><label for="idtext">Nome: <input type="text" name="texto" id="idtext" placeholder="Pedro Alberto"></label> </p>
+
+            <p><label for="idemail">Email: <input type="email" name="email" id="idemail" autocomplete="email" placeholder="pedroalberto@gmail.com"></label></p>
+
+            <p><label for="idsenha" >Senha: <input type="password" name="Senha" id="idsenha" minlength="8" maxlength="20" autocomplete="current-password"></label></p>
+
+            <p><label for="idtel">Telefone: <input type="tel" name="Telefone" id="idtel" pattern="^\(\d{2}\) \d{4,5}-\d{4}$"></label></p>
+
+            <p><label for="idnota">Nota: <input type="number" name="Nota" id="idnota" step="0.5" max="10" min="0"></label></p>
+
+            <p><label for="iddata">Data da prova: <input type="date" name="Data" id="iddata" value="2025-02-22"></label></p>
+
+            <p><label for="idhour">Horario da prova: <input type="time" name="Horario" id="idhour" value="17:00"></label></p>
+
+            <p>Esportes que voce gosta <br>
+                <label for="idbask">Basquete <input type="checkbox" name="Basquete" id="idbask"></label> <br>
+                <label for="idfut">Futebol <input type="checkbox" name="Futebol" id="idfut"></label> <br>
+                <label for="idvolei">Volei <input type="checkbox" name="Volei" id="idvolei"></label>
+            </p>
+
+            <p>Sexo <br>
+            <label for="idhomem">Homem <input value="Homem" type="radio" name="Sexo" id="idhomem"></label> <br>
+            <label for="idmulher">Mulher <input value="Mulher" type="radio" name="Sexo" id="idmulher"></label>
+            </p>
+
+
+
+
+
+
+        </form>
+    </fieldset>
+</body>
+</html>
