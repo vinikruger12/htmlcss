@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@media screen and (min-width:700px) and (max-width:992px){
+    
+   
+    
+    section{
+        width: 550px;
+        height: 300px;
+       
+    }
+
+    div.img{
+        float: right;
+        width: 30%;
+        height: 100%;
+    }
+
+    div.form{
+        float: left;
+        width: 70%;
+        height: 100%;
+    }
+
+    div.embaixo a{
+        text-decoration: none;
+        padding-left: 190px;
+        position: relative;
+        top: -2px;
+        color: black;
+    }
+
+    form > input[type = submit]{
+        display: block;
+        margin: auto;
+        width: 375px;
+        height: 55px;
+        position: relative;
+        top: 15px;
+        
+        
+    }
+
+    p.outras{
+        position: relative;
+        top: 30px;
+    }
+
+  
+}
+
+
+@media screen and (min-width:992px){
+     
+    section{
+        width: 700px;
+        height: 400px;
+       
+    }
+
+    div.img{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    div.form{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    div.form > p{
+        padding-bottom: 15px;
+    }
+
+        
+    div.embaixo a{
+        text-decoration: none;
+        padding-left: 156px;
+        position: relative;
+        top: -2px;
+        color: black;
+    }
+
+    form > input[type = submit]{
+        display: block;
+        margin: auto;
+        width: 335px;
+        height: 65px;
+        position: relative;
+        top: 23px;
+
+    }
+
+    
+    p.outras{
+        position: relative;
+        top: 105px;
+    }
+}
