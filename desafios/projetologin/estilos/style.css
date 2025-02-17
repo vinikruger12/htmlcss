@@ -22,16 +22,17 @@ body, html{
 }
 
 main{
-    position:relative;
+    
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
+    
 
     background-color: white;
     padding: 10px;
@@ -51,10 +52,14 @@ section#login > div#foto{
     background-image: url(../imagens/praia.jpg);
     height: 200px;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    
     margin: -10px;
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login > div#form{
