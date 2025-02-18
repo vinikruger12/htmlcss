@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex basis grow and shrink</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        div.container{
+            
+            display: flex;
+            background-color: aqua;
+            margin: auto;
+
+        }
+
+        div.container > div{
+            background-color: rgb(89, 153, 6);
+            padding: 10px;
+            flex-basis: 150px;
+            border: 1px solid black;
+            
+        }
+
+        div.um{
+           flex: 1 1;
+        }
+
+        div.dois{
+           flex: 2 0;
+        }
+
+        div.tres{
+           flex: 0 6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="um">1</div>
+        <div class="dois">2</div>
+        <div class="tres">3</div>
+    </div>
+</body>
+</html>
