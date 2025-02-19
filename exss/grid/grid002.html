@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div.wrapper{
+            
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, minmax(200px, auto));
+            grid-auto-rows: 200px;
+            grid-gap: 20px 20px;
+            
+           
+        }
+        
+        div.wrapper{
+            @media screen and (max-width:798px){
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        div.wrapper{
+            padding: 4px;
+            text-align: center;
+            font-weight: bolder;
+           
+        }
+
+
+        div.wrapper > div{
+            background-color: blue;
+        }
+
+        div.wrapper >div:nth-child(even){
+            background-color: aqua;
+        
+        }
+
+        div.um{
+            grid-column: 1 / -1;
+        }
+
+        div.dois{
+            grid-column: 1 / 1;
+        }
+
+        div.tres{
+            grid-column: 2 / 5;
+        }
+
+        div.tres{
+            @media screen and (max-width:798px){
+            grid-column: 1;
+        }
+    }
+        
+        div.cinco{
+            grid-column: 1 / -1;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="um">1</div>
+        <div class="dois">2</div>
+        <div class="tres">3</div>
+        <div>4</div>
+        <div class="cinco">5</div>
+    </div>
+</body>
+</html>
